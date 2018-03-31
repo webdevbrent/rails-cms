@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  resources :costs
-  resources :hosts
-  resources :posts
-
-  root to: 'posts#index'
+  
+  devise_for :users
+  resources :topics
+  root to: 'topics#index'
 end
